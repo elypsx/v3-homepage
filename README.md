@@ -1,5 +1,7 @@
 # Bastian Fischer Homepage
-### Web App
+### Web App build with VUE 
 
-## USAGE
+## FEATURES
+
+CI/CD GCLOUD PIPELINE
 
