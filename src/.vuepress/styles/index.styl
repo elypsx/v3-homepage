@@ -1,0 +1,432 @@
+/**
+ * Custom Styles here.
+ *
+ * ref：https://v1.vuepress.vuejs.org/config/#index-styl
+ */
+
+@require './_tags'
+@require './_transitions'
+
+body,html
+  overflow-x hidden !important
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar,html::-webkit-scrollbar
+ display: none !important
+
+svg.icon.outbound, .header-anchor {
+  display: none;
+}
+
+a
+  text-decoration none !important
+
+.page-nav
+  max-width 930px !important
+
+/* COOKIE ALERT */
+.Cookie--dark-lime .Cookie__button
+  background #009688 !important
+  border-radius 4px !important
+  padding 5px 15px !important
+
+.Cookie--dark-lime
+  background #212121 !important
+
+/* Navbar */
+.site-name
+  display block
+/*   @media $iphoneX
+    display none !important */
+
+.navbar .site-name
+  width auto !important
+
+.navbar
+  border-bottom none !important
+
+.navbar__acc-image
+  border 1px solid #fff
+  border-radius 50%
+  top 5px
+  margin-right 5px
+  width 20px
+  height 20px
+  @media $iphoneX
+    width 30px !important
+    height 30px !important
+
+@media $ipad
+  img.nav-item.navbar__acc-image
+      padding 0 0 0 0 !important
+      display inline-block !important
+
+.search-box input
+  @media $ipad
+    border none !important
+
+/* Sidebar */
+.sidebar .nav-links
+  border-bottom none !important
+
+/* Footer */
+.footer-links
+  margin 1.5rem .5rem .5rem auto
+  color var(--textMutedColor) !important
+  @media $ipad
+    display inline-flex
+    flex-wrap wrap
+    font-size 15px
+
+.footer-links-right
+  margin 1.5rem .5rem .5rem auto
+  color var(--textMutedColor) !important
+  @media $ipad
+    display inline-flex
+    flex-wrap wrap
+    font-size 15px
+
+.footer-main
+  display flex
+  flex-wrap nowrap
+  justify-content center
+  color var(--textMutedColor)
+  margin 1rem auto 1rem auto
+  width 80vw !important
+  @media $iphone11
+    display none !important
+
+.footer-wrapper
+  display flex !important
+  flex-wrap wrap
+  justify-content center !important
+  position relative
+  width 80vw !important
+  @media $ipad
+    width 80vw !important
+
+.line
+  border-top 1px solid var(--borderColor)
+  width 80vw
+  position relative
+
+.line-break
+  display none
+  @media $ipad
+    display block
+
+tr, td
+  border none
+
+.mobile-footer-wrapper
+ display flex
+ flex-wrap nowrap
+ justify-content center
+ margin 0 auto
+ postion relative
+
+.mobile-footer
+  display none
+  font-size 16px
+  padding 15px 0 10px
+  border none !important
+  text-align center
+  margin 0 auto !important
+  color var(--textMutedColor)
+  @media $iphone11
+    display block
+
+.mobile-footer-td
+  padding 5px
+  background none !important
+
+.mobile-footer-tr
+  background none !important
+  border-top 1px solid var(--borderColor)
+
+.mobile-footer-td-left
+  text-align right !important
+
+.mobile-footer-td-right
+  text-align left !important
+
+tr:nth-child(2n)
+  background-color transparent !important
+
+.footer-links-mobile
+  color var(--textMutedColor) !important
+
+/* Social Share Modul */
+div.social-share-module
+  display flex
+  flex-wrap wrap !important
+  position relative !important
+  justify-content center !important
+  align-items center !important
+
+li.social-share-network
+  width 80px
+  text-align center
+  display inline-flex
+  flex-wrap nowrap !important
+  justify-content space-between !important
+  align-items center !important
+  justify-items center !important
+
+.social-share-btn
+  background var(--darkBgColor) !important
+  -webkit-tap-highlight-color var(--darkBgColor) !important
+
+.social-share-global
+  border var(--darkBgColor) !important
+  background-color var(--darkBgColor) !important
+  display: none
+
+.social-share-icon-svg svg
+  transform scale(0.6)
+
+.social-share-global .social-share-btn
+  width 50px !important
+  height 50px !important
+
+.share-text
+  display flex
+  flex-wrap nowrap
+  justify-content center
+  color var(--textMutedColor)
+
+/* Hero Image Full Width */
+/**
+ img {
+      width: 100%;
+      object-fit: cover;
+      margin: 30px 0 0 0;
+  }
+**/
+
+/**
+.home .hero img
+  max-width 450px!important
+**/
+
+.home .hero .action-button
+  color #fff !important
+
+/* Theme Succient */
+.theme-succinct-content
+  max-width 960px !important
+  @media $iphoneX
+    width 374px !important
+
+.themeBtnText
+  display none !important
+  flex-wrap nowrap
+  position relative
+  margin-left 8px
+  @media $iphone11
+    display none !important
+
+.search-box input
+  @media $ipadMini
+    right 2rem !important
+    left -.5rem !important
+
+/* V-Card */
+div.v-card
+   text-decoration none !important
+   outline none !important
+   background-color var(--darkerBgColor) !important
+   &:hover
+    background-color var(--hoverColor) !important
+   span
+    background-color transparent !important
+
+/* V-List */
+.v-list-item__content
+  color var(--textColor) !important
+
+.v-list-item__subtitle
+  color var(--textColor) !important
+
+/* Post Details */
+.pdate
+  font-size $bodyFontSizeS
+  color var(--textMutedColor)
+
+.descriptionText
+  color var(--descriptionColor)
+
+.v-list-item__subtitle, .v-list-item__title
+    color var(--textColor) !important
+    font-size $bodyFontSizeM !important
+    flex 1 1 100%
+    overflow hidden
+    text-overflow ellipsis
+    white-space normal
+
+.postDetails-wrapper
+  display inline-flex
+  flex-wrap wrap
+  justify-content space-between
+  line-height 24px
+  margin-top 5px
+  font-size $bodyFontSizeS
+
+/* Table Of Content */
+.toc
+  display none
+  margin-left 1rem
+  font-size $bodyFontSizeS
+  @media $iphone11
+    display block
+
+/* Next Prev Links */
+.nextPrevLinks
+  width 960px !important
+
+.page-edit
+  max-width 960px !important
+
+/* Markdown Code Wrapper */
+.full-code-wrapper
+  background #1a1c21
+  border-radius 1rem
+  padding 0 .5rem 0 .5rem
+  margin 1rem .5rem
+
+.code-control
+  margin 20px 0 10px 0 !important
+  background #263238 !important
+  color #aaa
+  border-radius .5rem !important
+
+div.online-wrapper button svg
+  fill #aaa
+
+.demo-and-code-wrapper .code-control .control-btn
+  display inline-block !important
+  flex 0 !important
+  min-width 100px !important
+  font-size 14px
+
+/* USER PROFILE PAGE */
+
+.profile-banner
+  width 100%
+  height 300px
+  @media $iphoneX
+   height 150px
+
+.profile-image
+  border 1px solid #fff
+  border-radius 50%
+  margin -80px 0 0 50px
+  width 150px
+  height 150px
+  @media $iphoneX
+    width 120px
+    height 120px
+    margin -80px auto 0 auto
+    display flex
+
+.profile-welcome-message
+  margin 30px 0 0 230px
+  position absolute
+  font-size 28px
+  @media $iphoneX
+   margin 60px auto 0 auto
+   display flex
+   flex-wrap wrap
+   justify-content center
+   position relative
+
+.profile-data
+  margin 100px 0 0 70px
+  @media $iphoneX
+   margin 50px auto 0 auto
+
+.profile-update-btn
+  text-align center
+
+.logout-btn
+  display flex
+  justify-content center
+  flex-wrap wrap
+  margin 1rem
+
+/* NEWSLETTER */
+.newsletter__wrapper
+  display flex
+  flex-wrap wrap
+  justify-content center
+  background var(--bodyBgColor) !important
+  padding .5rem
+  // border 1px solid var(--darkerBgColor)
+  // box-shadow 2px 2px 0 #000
+  margin 1.5rem auto
+  border-radius 4px !important
+  width 80%
+  .newsletter__form
+    color var(--textColor) !important
+    width 95% !important
+    justify-content center
+    .newsletter__container
+      text-align center
+      width 100%
+
+/* FORM */
+.v-input__slot::before, .v-input__slot::after
+  border-bottom 1px solid var(--textColor) !important
+  color var(--textColor)
+
+label
+  color var(--textMutedColore)
+
+.v-label
+  color var(--textMutedColor) !important
+
+button
+  width 200px !important
+
+.v-label--active
+  color var(--badgeTipColor) !important
+
+.v-text-field__details .v-messages
+  color var(--badgeErrorColor)
+
+.v-counter
+  color var(--badgeTipColor) !important
+
+.v-text-field__slot input
+  color var(--textColor) !important
+
+/* LOGIN */
+.login__wrapper
+  min-width 300px
+  max-width 300px
+  display flex
+  flex-wrap nowrap
+  justify-content center
+  margin auto
+  h1
+    margin auto
+
+.login-module-links
+  font-size .9rem
+  text-align center
+
+.login-btn
+  display flex
+  margin-left auto !important
+  margin-right auto !important
+  color #fff !important
+
+.ra-button
+  margin-right 1.5rem !important
+  .icon
+    width 1rem !important
+    height 1rem !important
+
+@media $iphone11
+  .ra-button, .ra-menu
+    display none !important

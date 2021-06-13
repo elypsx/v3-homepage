@@ -1,0 +1,59 @@
+// FONT
+$themeFont = "https://fonts.googleapis.com/css?family=Roboto+Mono|Lato&display=swap"
+$bodyFontFamily = "Lato"
+$monoFontFamily = "Roboto Mono"
+
+// FONT SIZE
+$bodyFontSizeXXL = 27px
+$bodyFontSizeXL = 24px
+$bodyFontSizeL = 21px
+$bodyFontSizeM = 18px
+$bodyFontSizeS = 15px
+$bodyFontSizeXS = 12px
+
+// LIGHT THEME- COLORS
+$hoverColor = #22232a
+$darkerBgColor = #e4e7e8
+
+// DARK THEME - COLORS
+$hoverColorDark = #22232a
+$darkerBgColorDark = #22232a
+
+// ---------------------------------------------------------------
+
+// LIGHT THEME - CSS VARIABLES
+:root, [data-theme='light']
+    --hoverColor lighten($hoverColor, 97%)
+    --darkerBgColor lighten($darkerBgColor, 95%)
+
+// DARK THEME - CSS VARIABLES
+[data-theme='dark']
+    --hoverColor $hoverColorDark
+    --darkerBgColor $darkerBgColorDark
+
+// ---------------------------------------------------------------
+
+// BREAKPOINTS
+$iphoneX = '(max-width: 374px + 1px)'
+$iphone11 = '(max-width: 418px + 1px)'
+$ipadMini = '(max-width: 719px)'
+$ipad = '(max-width: 767px + 1px)'
+
+
+
+$rightAnchorBgColor = var(--darkerBgColor);
+$rightAnchorTextColor = $bodyTextColor;
+$rightAnchorFontSize = 14px;
+// btn
+$rightAnchorBtnTextColor = $rightAnchorTextColor;
+$rightAnchorBtnBgColor = transparent;
+// menu
+$rightAnchorMenuTextColor = $rightAnchorTextColor;
+
+
+// READING PROGRESS
+$readingBgColor = transparent
+$readingZIndex = 1000
+$readingSize = 3px
+$readingProgressColor = $accentColor
+// $readingProgressImage = linear-gradient(-120deg, #E50743 0%, #F9870F 15%, #E8ED30 30%, #3FA62E 45%, #3BB4D7 60%, #2F4D9E 75%, #71378A 80%)

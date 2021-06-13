@@ -1,0 +1,16 @@
+steps:
+# Install
+- name: 'gcr.io/cloud-builders/yarn'
+  args: ['install']
+# Test
+# - name: 'gcr.io/cloud-builders/yarn'
+#   args: ['run', 'test:unit']
+# Build
+- name: 'gcr.io/cloud-builders/yarn'
+  args: ['build']
+# Node
+# - name: 'gcr.io/cloud-builders/yarn'
+#   args: ['ms']
+# Deploy
+- name: 'gcr.io/v3-homepage/firebase'
+  args: ['deploy']
