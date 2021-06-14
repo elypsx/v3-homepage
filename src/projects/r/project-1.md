@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: Project 1
 description: Description of project
 image: /assets/img/codefolder_99364-512.png

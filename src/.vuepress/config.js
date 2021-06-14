@@ -8,9 +8,15 @@ global.XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 //  path: `.env.${process.env.NODE_ENV}`,
 // })
 // const webpack = require('webpack')
-
+require('dotenv').config()
+const webpack = require('webpack')
 
   module.exports = {
+  configureWebpack: (config) => {
+      return { plugins: [
+        new webpack.EnvironmentPlugin({ ...process.env })
+      ]}
+    },
    /*  configureWebpack: (config) => {
       return { plugins: [
         new webpack.EnvironmentPlugin({ ...process.env })
@@ -223,9 +229,11 @@ global.XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
       '@vssue/vuepress-plugin-vssue', {
         platform: 'github',
         owner: 'elypsx',
-        repo: 'bastian-fischer',
-        clientId: process.env.VUE_APP_CLIENT_ID,
-        clientSecret: process.env.VUE_APP_CLIENT_SECRET,
+        repo: 'v3-homepage',
+        clientId: process.env.VSSUE_CLIENT_ID,
+        clientSecret: process.env.VSSUE_CLIENT_SECRET,
+        autoCreateIssue: true,
+
       },
     ],
     [
