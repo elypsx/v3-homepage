@@ -9,8 +9,8 @@
             <v-spacer></v-spacer>
             <a class="footer-links" href="/privacy-police/">Twitter</a>
             <a class="footer-links" href="/impressum/">Github</a>
-            <a class="footer-links-right" href="/privacy-police/">Datenschutz</a>
-            <a class="footer-links-right" href="/impressum/">Impressum</a>
+            <router-link to="/privacy-police/" class="footer-links-right" >Datenschutz</router-link>
+            <router-link to="/impressum/" class="footer-links-right" >Impressum</router-link>
         </p>
         <br>
     </div>

@@ -1,13 +1,7 @@
 const { description } = require('../../package')
 const path = require('path')
-// const PrerenderSPAPlugin = require('prerender-spa-plugin')
 global.fetch = require('node-fetch');
 global.XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
-
-// require("dotenv").config({
-//  path: `.env.${process.env.NODE_ENV}`,
-// })
-// const webpack = require('webpack')
 require('dotenv').config()
 const webpack = require('webpack')
 
@@ -17,19 +11,8 @@ const webpack = require('webpack')
         new webpack.EnvironmentPlugin({ ...process.env })
       ]}
     },
-   /*  configureWebpack: (config) => {
-      return { plugins: [
-        new webpack.EnvironmentPlugin({ ...process.env })
-      ]}
-    }, */
 
-  mode: 'production',
-      // runtimeCompiler: true,
-  // chainWebpack(config, isServer) {
-  //   config.output.globalObject('this');
-  //   config.resolve.alias.set('mainFields','main');
-  //   config.output.libraryTarget('commonjs2');
-  // },
+  Mode: 'production',
   // theme: '@vuepress/blog',
   
   globalUIComponents: [
@@ -50,16 +33,7 @@ const webpack = require('webpack')
   // Third Party Components
   thirdPartyComponents: {
 
-
-    // configureWebpack: (config, isServer) => {
-    //   if (!isServer) {
-    //     config.resolve.mainFields = ['main','browser'];
-    //     config.output.globalObject = 'this';
-    //     config.output.libraryTarget = 'commonjs2';
-    //     config.externals = ['firebase','firebase'];
-    //   }
-    // },
-   		fontAwesomeIcons:{
+	fontAwesomeIcons:{
       regular:['sun'],      // Regular Font - one must included
 			solid:[               // Solid font awesome icon keys here
         'sun',
@@ -110,7 +84,7 @@ const webpack = require('webpack')
     },
     cookies: {
       theme: 'dark-lime',
-      buttonText: 'OK',
+      buttonText: 'Klingt Gut!',
       closeButtonText: 'Schliessen',
       message: 'Diese Webapp verwendet Cookies, um seine Dienste bereitzustellen, Werbung zu personalisieren und Traffic zu analysieren.',
     },
@@ -225,13 +199,14 @@ const webpack = require('webpack')
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
+    'vuepress-plugin-nprogress',
     [
       '@vssue/vuepress-plugin-vssue', {
         platform: 'github',
         owner: 'elypsx',
         repo: 'v3-homepage',
-        clientId: process.env._VUE_APP_VSSUE_CLIENT_ID,
-        clientSecret: process.env._VUE_APP_VSSUE_CLIENT_SECRET,
+        clientId: process.env.VUE_APP_VSSUE_CLIENT_ID,
+        clientSecret: process.env.VUE_APP_VSSUE_CLIENT_SECRET,
         autoCreateIssue: true,
       },
     ],
@@ -451,12 +426,15 @@ const webpack = require('webpack')
     [
       '@vuepress/medium-zoom',
       {
-        selector: 'img.zoom-custom-imgs',
+        selector: 'img',
         // medium-zoom options here
         // See: https://github.com/francoischalifour/medium-zoom#options
+        delay: 1000,
         options: {
-          margin: 16
-        }
+          margin: 24,
+          background: '#BADA55',
+          scrollOffset: 0,
+        },
       }
     ],
     [
@@ -476,7 +454,7 @@ const webpack = require('webpack')
       'vuepress-plugin-rss',
       {
         base_url: '/', // required
-        site_url: 'https://bastian-fischer.web.app', // required
+        site_url: 'https://v3-homepage.web.app', // required
         copyright: '2021 Bastian Fischer', // optional
         // filter some post
         filter: (frontmatter) => { return [true|false] },

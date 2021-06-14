@@ -14,7 +14,7 @@
           cols="12"
           sm="12"
         >
-          <a :href='post.frontmatter.path'>
+          <router-link :to='post.frontmatter.path'>
           <v-card>
                <v-list-item three-line>
                 <img
@@ -30,7 +30,7 @@
                 </v-list-item-content>
               </v-list-item>
           </v-card>
-        </a>
+        </router-link>
         </v-col>
 
 

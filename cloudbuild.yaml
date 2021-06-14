@@ -1,19 +1,20 @@
 steps:
+
 # Install
 - name: 'gcr.io/cloud-builders/yarn'
   args: ['install']
+
 # Test
 # - name: 'gcr.io/cloud-builders/yarn'
 #   args: ['run', 'test:unit']
+
 # Build
 - name: 'gcr.io/cloud-builders/yarn'
   args: ['build','create-env']
   env:
-    - '_VUE_APP_VSSUE_CLIENT_ID=${_VUE_APP_VSSUE_CLIENT_ID}'
-    - '_VUE_APP_VSSUE_CLIENT_SECRET=${_VUE_APP_VSSUE_CLIENT_SECRET}'
-# Node
-# - name: 'gcr.io/cloud-builders/yarn'
-#   args: ['ms']
+    - 'VUE_APP_VSSUE_CLIENT_ID=${_VUE_APP_VSSUE_CLIENT_ID}'
+    - 'VUE_APP_VSSUE_CLIENT_SECRET=${_VUE_APP_VSSUE_CLIENT_SECRET}'
+
 # Deploy
 - name: 'gcr.io/v3-homepage/firebase'
   args: ['deploy']
