@@ -230,10 +230,9 @@ const webpack = require('webpack')
         platform: 'github',
         owner: 'elypsx',
         repo: 'v3-homepage',
-        clientId: process.env.VSSUE_CLIENT_ID,
-        clientSecret: process.env.VSSUE_CLIENT_SECRET,
+        clientId: process.env.VUE_APP_VSSUE_CLIENT_ID,
+        clientSecret: process.env.VUE_APP_VSSUE_CLIENT_SECRET,
         autoCreateIssue: true,
-
       },
     ],
     [
