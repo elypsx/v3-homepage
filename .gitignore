@@ -10,6 +10,6 @@ dist
 .basement
 config.local.js
 basement_dist
-.env.development
-.env.production
+.env.development.local
+.env.production.local
 .env
