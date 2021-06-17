@@ -19,6 +19,10 @@
         <br>
                <a href="">Sag "Hallo"</a>
         </p>
+        <br>
+        <br>
+        <br>
+        <h4>Viele Grüße und Happy Coding!</h4>
     </div>
 </template>
 

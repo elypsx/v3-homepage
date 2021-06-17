@@ -24,10 +24,10 @@
         </tr>
         <tr class="">
             <td class="mobile-footer-td" colspan="1">
-                <a class="footer-links-mobile" href="/impressum/">Impressum</a>
+                <router-link to="/impressum/" class="footer-links-right" >Impressum</router-link>
             </td>
             <td class="mobile-footer-td" colspan="1">
-                <a class="footer-links-mobile" href="/privacy-police/">Datenschutz</a>
+                <router-link to="/privacy-police/" class="footer-links-right" >Datenschutz</router-link>
             </td>
             <td class="mobile-footer-td" colspan="1">
                 <a class="footer-links-mobile" href="/impressum/">Github</a>

@@ -13,17 +13,55 @@ sidebar: false
 author: Bastian Fischer
 location: Kiel, Germany
 ---
+Emacs läuft auf mehreren Betriebssystemen, unabhängig vom Maschinentyp. Die wichtigsten sind: GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, MacOS, MS Windows und Solaris.
+<br>
+<br>
 
-## Very Long Awesome Title 1
-Nulla veniam et ullamco mollit eiusmod mollit occaecat ex consequat nostrud enim sunt incididunt ad. Irure nostrud anim minim reprehenderit laboris commodo voluptate magna labore nostrud laborum anim. Dolor qui minim qui id nostrud. Non eu cillum occaecat sunt mollit esse veniam consectetur esse occaecat veniam ipsum ea Lorem. Do elit veniam exercitation do proident ipsum dolore.
+> 💡 Der Quellcode und die Entwicklung von GNU Emacs werden auf [savannah.gnu.org](http://savannah.gnu.org/) gehostet.
 
-## Title 2
-Eu consequat reprehenderit enim laboris Lorem. Commodo ex sint adipisicing quis id voluptate aliquip quis consequat ipsum ullamco Lorem nisi. Pariatur consequat tempor consequat velit Lorem minim excepteur velit qui non sint commodo adipisicing. Proident proident nulla ex ex dolore adipisicing in esse culpa non voluptate ad consequat. Velit eiusmod ea minim veniam ad reprehenderit laboris officia ipsum. Duis deserunt dolor laborum anim amet et pariatur cillum consequat.
+<br>
+<br>
 
-## Title 3
-Sint culpa elit ullamco nulla velit in pariatur amet nisi Lorem laboris aute. Ipsum mollit proident incididunt veniam eiusmod enim. Commodo aute ad esse cupidatat nisi pariatur sunt adipisicing nostrud.
+## Installation
+<br>
 
-## Title 4
-Aliquip occaecat eu aute irure ad ad officia esse culpa culpa reprehenderit commodo proident aute. Ut ea aute ut cupidatat. Culpa duis occaecat nisi ullamco aliquip anim aliquip dolore sit in sit ex ut. Ullamco duis et amet enim ea quis aute duis ipsum ea elit ad. Et fugiat ullamco occaecat incididunt commodo reprehenderit consectetur enim tempor consequat nulla consequat ex amet. Nisi voluptate in proident laborum velit. Sunt dolore excepteur tempor enim excepteur.
+Zum installieren unter MacOS können wir Homebrew oder Macports nutzen.
+<br>
+<br>
 
+> ❗ Die Website [Emacs for OSX](https://emacsformacosx.com/) bietet auch universelle Binärdateien. Diese Installationsart wird aber nicht empfohlen,    da sie immer wieder mit Problemen verbunden ist.
 
+<br>
+Öffnen sie das Terminal (cmd + space & tippen sie: terminal) und dann geben sie einen der folgenden Befehle ein:
+
+### Homebrew
+
+```bash
+brew cask install emacs
+```
+
+### Macports
+
+```bash
+sudo port install emacs-app
+```
+<br>
+<br>
+Weitere Informationen finden sie auf den zugehörigen Websites.
+<br>
+<br>
+
+> 💡️ Fragen und Probleme können Sie gerne in den Kommentaren schildern.
+
+<br>
+<br>
+
+**Happy coding!**
+<br>
+<br>
+
+## Referenzen
+
+[GNU Emacs](https://www.gnu.org/software/emacs/download.html)
+
+[Homebrew Formulae](https://formulae.brew.sh/)
